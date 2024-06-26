@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  background: #969595;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  position: relative;
+  width: 550px;
+  height: 400px;
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+form {
+  position: absolute;
+  width: 50%;
+  padding: 50px 10px;
+}
+form h1 {
+  text-align: center;
+  color: #f825d5;
+}
+.box {
+  width: 100%;
+  height: 60px;
+}
+.box input {
+  width: 100%;
+  height: 60px;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #000;
+  font-size: 15px;
+}
+input[type="submit"] {
+  background: #f825d5;
+  margin-top: 50px;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+/* -- form-right -- */
+.form-right {
+  display: flex;
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: #f825d5;
+  align-items: center;
+  padding-top: 25%;
+  flex-direction: column;
+}
+
+/* -- ajouter des couleurs -- */
+.colors-form {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 60px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+.colors-form span {
+  background: var(--i);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

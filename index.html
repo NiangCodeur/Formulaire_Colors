@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulaire</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Se Connecter</h1>
+        <div class="box">
+          <input type="email" placeholder="Entrer Votre Email" />
+        </div>
+        <div class="box">
+          <input type="password" placeholder="Entrer Votre Mot de Passe" />
+        </div>
+        <div class="box">
+          <input type="submit" value="Envoyer" id="btn" />
+        </div>
+      </form>
+
+      <!-- form-right -->
+      <div class="form-right">
+        <h1>Bienvenue !</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+    <!-- ajouter des couleurs -->
+    <div class="colors-form">
+      <span onclick="changeColor('#f825d5')" style="--i: #f825d5"></span>
+      <span onclick="changeColor('#02e0fd')" style="--i: #02e0fd"></span>
+      <span onclick="changeColor('#14ff1c')" style="--i: #14ff1c"></span>
+      <span onclick="changeColor('#ffe41a')" style="--i: #ffe41a"></span>
+      <span onclick="changeColor('#fd1414')" style="--i: #fd1414"></span>
+    </div>
+
+    <!-- javaScript -->
+    <script>
+      const formRight = document.querySelector(".form-right");
+      const btn = document.querySelector("#btn");
+      const h1 = document.querySelector("form h1");
+
+      function changeColor(color) {
+        formRight.style.background = color;
+        btn.style.background = color;
+        h1.style.color = color;
+      }
+    </script>
+  </body>
+</html>
